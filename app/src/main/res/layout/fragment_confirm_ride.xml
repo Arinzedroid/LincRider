@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/fareEstimateTxt"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat.Title"
+        tools:text="N20,000"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fareEstimateTxt"
+        android:id="@+id/distanceTxt"
+        android:textSize="16sp"
+        tools:text="Distance: 50KM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:drawableStartCompat="@drawable/ic_info_white"
+        android:drawablePadding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distanceTxt"
+        android:layout_marginTop="30dp"
+        android:id="@+id/trafficTxt"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_red_drawable"
+        tools:visibility="visible"
+        android:visibility="invisible"
+        android:text="@string/price_increase_due_to_traffic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:drawableStartCompat="@drawable/round_info_outline_24"
+        android:drawablePadding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trafficTxt"
+        android:layout_marginTop="10dp"
+        android:id="@+id/surgeTxt"
+        android:textSize="12sp"
+        android:background="@drawable/rounded_yellow_drawable"
+        tools:visibility="visible"
+        android:visibility="invisible"
+        android:text="@string/price_increase_due_to_surge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/surgeTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/acceptBtn"
+        android:backgroundTint="@color/quantum_googred"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:id="@+id/cancelBtn"
+        android:layout_marginEnd="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginStart="10dp"
+        android:id="@+id/acceptBtn"
+        android:text="@string/confirm_ride"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/quantum_googgreen"
+        app:layout_constraintTop_toTopOf="@+id/cancelBtn"
+        app:layout_constraintStart_toEndOf="@+id/cancelBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

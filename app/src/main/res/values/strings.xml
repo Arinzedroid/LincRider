@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LincRide Assessment</string>
+    <string name="title_activity_maps">LincRide Assessment</string>
+    <string name="your_location">Your location…</string>
+    <string name="your_destination">Enter destination…</string>
+    <string name="cancel_ride">Cancel Ride</string>
+    <string name="price_increase_due_to_traffic">Price increase due to traffic</string>
+    <string name="price_increase_due_to_surge">Price increase due to surge</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_ride">Confirm Ride</string>
+    <string name="driving_to_your_destination">Driving to your destination</string>
+</resources>
