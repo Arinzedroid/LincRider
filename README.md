@@ -22,7 +22,7 @@ To use Google Maps and Places API, follow these steps:
 4. Copy the generated API key.
 
 ### 3️⃣ Configure `local.defaults.properties`
-Create a file named `local.defaults.properties` in the root folder of the project `(if it does not exist already)` and add the following:
+Create a file named `local.defaults.properties` in the root folder of the project `(if the file does not already exist)` and add the following:
 ```properties
 MAPS_API_KEY=YOUR-API-KEY
 ```
@@ -30,6 +30,12 @@ Replace `YOUR-API-KEY` with the API key you generated in the previous step.
 
 ## Running the Project
 Once the setup is complete, you can build and run the project in Android Studio Koala without issues.
+
+## Running Tests
+To execute tests, navigate to the `LincInstrumentationTest` class and run the test. Alternatively, you can use the Gradle task:
+```sh
+./gradlew connectedDebugAndroidTest
+```
 
 For any issues, check the official documentation or reach out for support!
 
